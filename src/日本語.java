@@ -9,6 +9,14 @@
  */
 @SuppressWarnings("NonAsciiCharacters")
 public class 日本語 {
+    String regexの約物 = "/[\\u3000-\\u303F]/g",
+           regexの平仮名 = "/[\\u3040-\\u309f]/g",
+           regexの片仮名 = "/[\\u30a0-\\u30ff]/g",
+           regexのローマ字 = "/[\\uff00-\\uff9f]/g",
+           regexのCJK = "/[\\u4e00-\\u9faf]/g",
+           regexの拡張CJK = "/[\\u3400-\\u4dbf]]/g",
+           regexの全部 = "/[\\u3000-\\u303F]|[\\u3040-\\u309F]|[\\u30A0-\\u30FF]|[\\uFF00-\\uFFEF]|[\\u4E00-\\u9FAF]|[\\u2605-\\u2606]|[\\u2190-\\u2195]|\\u203B|[0-9]/g";
+
     /**
      * 盛れる（もれる）
      * @param str ストリングを提供する
