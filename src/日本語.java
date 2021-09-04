@@ -1,12 +1,12 @@
-/**
+/*
  * 名前：マキヨムの変換器（マキヨムのへんかんき）
  * 氏名：マキヨムの並直列変換器（マキヨムのへいちょくれつへんかんき）
  */
 
-@SuppressWarnings("NonAsciiCharacters")
-/*
+/**
  * 日本語（にほんご）
  */
+@SuppressWarnings("NonAsciiCharacters")
 public class 日本語 {
     /**
      * 盛れる（もれる）
