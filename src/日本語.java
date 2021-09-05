@@ -15,7 +15,8 @@ import java.util.regex.Matcher;
 @SuppressWarnings("NonAsciiCharacters")
 public class 日本語 {
     // TODO: これを直せる
-    static String regexの約物 = "[\u3000-\u303F]",
+    static String
+           regexの約物 = "[\u3000-\u303F]",
            regexの平仮名 = "[\u3040-\u309f]",
            regexの片仮名 = "[\u30a0-\u30ff]",
            regexのローマ字 = "[\uff00-\uff9f]",
@@ -74,5 +75,6 @@ public class 日本語 {
     public static void main(String[] args) {
         System.out.println(盛れる("おいしい.本当に!!!"));
         System.out.println(日本語を抜き出す("おいしい.本当に!!!", "平仮名"));
+        //System.out.println(日本語を抜き出す(""));
     }
 }
