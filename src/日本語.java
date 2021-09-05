@@ -5,6 +5,7 @@
  */
 
 // Regex
+import java.sql.SQLOutput;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
@@ -13,8 +14,9 @@ import java.util.regex.Matcher;
  */
 @SuppressWarnings("NonAsciiCharacters")
 public class 日本語 {
+    // TODO: これを直せる
     static String regexの約物 = "/[\\u3000-\\u303F]/g",
-           regexの平仮名 = "/[\\u3040-\\u309f]/g",
+           regexの平仮名 = "\"[\\u3040-\\u309f]\"g",
            regexの片仮名 = "/[\\u30a0-\\u30ff]/g",
            regexのローマ字 = "/[\\uff00-\\uff9f]/g",
            regexのCJK = "/[\\u4e00-\\u9faf]/g",
@@ -59,7 +61,7 @@ public class 日本語 {
 
     private static String regexマッチャー(String str, String regex) {
         StringBuilder stringBuilder = new StringBuilder();
-        Pattern patternJP = Pattern.compile(regex);
+        Pattern patternJP = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
         Matcher matcherJP = patternJP.matcher(str);
 
         while (matcherJP.find()) {
@@ -71,5 +73,6 @@ public class 日本語 {
 
     public static void main(String[] args) {
         System.out.println(盛れる("おいしい.本当に!!!"));
+        System.out.println(日本語を抜き出す("おいしい.本当に!!!", "平仮名"));
     }
 }
