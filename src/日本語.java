@@ -4,6 +4,10 @@
  * 氏名：マキヨムの並直列変換器（マキヨムのへいちょくれつへんかんき）
  */
 
+// Regex
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+
 /**
  * 日本語（にほんご）
  */
@@ -32,6 +36,39 @@ public class 日本語 {
                 .replace("!", "！")
                 .replace("?", "？")
                 .trim();
+    }
+
+    /**
+     * 日本語を抜き出す（にほんごをぬきだす）
+     * @param str ストリングを提供する
+     * @param type タイプ
+     * @return 日本語のみのストリング
+     */
+    public static String 日本語を抜き出す(String str, String type) {
+        switch (type.toUpperCase()) {
+            case "約物": {
+
+            }
+            case "平仮名": {
+
+            }
+            case "片仮名": {
+
+            }
+            case "ローマ字": {
+
+            }
+            case "CJK": {
+
+            }
+            case "拡張CJK": {
+
+            }
+            case "全部": {
+
+            }
+        }
+        return "";
     }
 
     public static void main(String[] args) {
