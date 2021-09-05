@@ -13,7 +13,7 @@ import java.util.regex.Matcher;
  */
 @SuppressWarnings("NonAsciiCharacters")
 public class 日本語 {
-    String regexの約物 = "/[\\u3000-\\u303F]/g",
+    static String regexの約物 = "/[\\u3000-\\u303F]/g",
            regexの平仮名 = "/[\\u3040-\\u309f]/g",
            regexの片仮名 = "/[\\u30a0-\\u30ff]/g",
            regexのローマ字 = "/[\\uff00-\\uff9f]/g",
@@ -45,30 +45,16 @@ public class 日本語 {
      * @return 日本語のみのストリング
      */
     public static String 日本語を抜き出す(String str, String type) {
-        switch (type.toUpperCase()) {
-            case "約物": {
-
-            }
-            case "平仮名": {
-
-            }
-            case "片仮名": {
-
-            }
-            case "ローマ字": {
-
-            }
-            case "CJK": {
-
-            }
-            case "拡張CJK": {
-
-            }
-            case "全部": {
-
-            }
-        }
-        return "";
+        return switch (type.toUpperCase()) {
+            case "約物" -> regexマッチャー(str, regexの約物);
+            case "平仮名" -> regexマッチャー(str, regexの平仮名);
+            case "片仮名" -> regexマッチャー(str, regexの片仮名);
+            case "ローマ字" -> regexマッチャー(str, regexのローマ字);
+            case "CJK" -> regexマッチャー(str, regexのCJK);
+            case "拡張CJK" -> regexマッチャー(str, regexの拡張CJK);
+            case "全部" -> regexマッチャー(str, regexの全部);
+            default -> str;
+        };
     }
 
     private static String regexマッチャー(String str, String regex) {
