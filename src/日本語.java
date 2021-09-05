@@ -71,6 +71,18 @@ public class 日本語 {
         return "";
     }
 
+    private static String regexマッチャー(String str, String regex) {
+        StringBuilder stringBuilder = new StringBuilder();
+        Pattern patternJP = Pattern.compile(regex);
+        Matcher matcherJP = patternJP.matcher(str);
+
+        while (matcherJP.find()) {
+            stringBuilder.append(matcherJP.group());
+        }
+
+        return stringBuilder.toString();
+    }
+
     public static void main(String[] args) {
         System.out.println(盛れる("おいしい.本当に!!!"));
     }
