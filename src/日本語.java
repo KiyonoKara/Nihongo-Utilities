@@ -30,7 +30,7 @@ public class 日本語 {
      */
     public static String 盛れる(String str) {
         return str
-                .replace("/\\s/g", "　")
+                .replace("\\s", "　")
                 .replace(",", "、")
                 .replace(".", "。")
                 .replace("~", "〜")
