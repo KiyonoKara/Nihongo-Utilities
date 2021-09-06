@@ -60,6 +60,12 @@ public class 日本語 {
         };
     }
 
+    /**
+     * regexマッチャー
+     * @param str ストリングを提供する
+     * @param regex 正規表現を提供する
+     * @return 正規表現の実績データ
+     */
     private static String regexマッチャー(String str, String regex) {
         StringBuilder stringBuilder = new StringBuilder();
         Pattern patternJP = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
