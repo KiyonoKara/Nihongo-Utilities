@@ -5,7 +5,6 @@
  */
 
 // Regex
-import java.sql.SQLOutput;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
