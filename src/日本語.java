@@ -65,7 +65,7 @@ public class 日本語 {
      * @param regex 正規表現を提供する
      * @return 正規表現の実績データ
      */
-    private static String 正規表現マッチャー(String str, String regex) {
+    public static String 正規表現マッチャー(String str, String regex) {
         StringBuilder stringBuilder = new StringBuilder();
         Pattern patternJP = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
         Matcher matcherJP = patternJP.matcher(str);
