@@ -4,7 +4,7 @@
  * 氏名：マキヨムの並直列変換器（マキヨムのへいちょくれつへんかんき）
  */
 
-// Regex
+// 正規表現
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
@@ -15,13 +15,13 @@ import java.util.regex.Matcher;
 public class 日本語 {
     // TODO: これを直せる
     static String
-           regexの約物 = "[\u3000-\u303F]",
-           regexの平仮名 = "[\u3040-\u309f]",
-           regexの片仮名 = "[\u30a0-\u30ff]",
-           regexのローマ字 = "[\uff00-\uff9f]",
-           regexのCJK = "[\u4e00-\u9faf]",
-           regexの拡張CJK = "[\u3400-\u4dbf]]",
-           regexの全部 = "[\u3000-\u303F]|[\u3040-\u309F]|[\u30A0-\u30FF]|[\uFF00-\uFFEF]|[\u4E00-\u9FAF]|[\u2605-\u2606]|[\u2190-\u2195]|\u203B|[0-9]";
+           正規表現の約物 = "[\u3000-\u303F]",
+           正規表現の平仮名 = "[\u3040-\u309f]",
+           正規表現の片仮名 = "[\u30a0-\u30ff]",
+           正規表現のローマ字 = "[\uff00-\uff9f]",
+           正規表現のCJK = "[\u4e00-\u9faf]",
+           正規表現の拡張CJK = "[\u3400-\u4dbf]]",
+           正規表現の全部 = "[\u3000-\u303F]|[\u3040-\u309F]|[\u30A0-\u30FF]|[\uFF00-\uFFEF]|[\u4E00-\u9FAF]|[\u2605-\u2606]|[\u2190-\u2195]|\u203B|[0-9]";
 
     /**
      * 盛れる（もれる）
@@ -48,24 +48,24 @@ public class 日本語 {
      */
     public static String 日本語を抜き出す(String str, String type) {
         return switch (type.toUpperCase()) {
-            case "約物" -> regexマッチャー(str, regexの約物);
-            case "平仮名" -> regexマッチャー(str, regexの平仮名);
-            case "片仮名" -> regexマッチャー(str, regexの片仮名);
-            case "ローマ字" -> regexマッチャー(str, regexのローマ字);
-            case "CJK" -> regexマッチャー(str, regexのCJK);
-            case "拡張CJK" -> regexマッチャー(str, regexの拡張CJK);
-            case "全部" -> regexマッチャー(str, regexの全部);
+            case "約物" -> 正規表現マッチャー(str, 正規表現の約物);
+            case "平仮名" -> 正規表現マッチャー(str, 正規表現の平仮名);
+            case "片仮名" -> 正規表現マッチャー(str, 正規表現の片仮名);
+            case "ローマ字" -> 正規表現マッチャー(str, 正規表現のローマ字);
+            case "CJK" -> 正規表現マッチャー(str, 正規表現のCJK);
+            case "拡張CJK" -> 正規表現マッチャー(str, 正規表現の拡張CJK);
+            case "全部" -> 正規表現マッチャー(str, 正規表現の全部);
             default -> str;
         };
     }
 
     /**
-     * regexマッチャー
+     * 正規表現マッチャー
      * @param str ストリングを提供する
      * @param regex 正規表現を提供する
      * @return 正規表現の実績データ
      */
-    private static String regexマッチャー(String str, String regex) {
+    private static String 正規表現マッチャー(String str, String regex) {
         StringBuilder stringBuilder = new StringBuilder();
         Pattern patternJP = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
         Matcher matcherJP = patternJP.matcher(str);
