@@ -13,7 +13,6 @@ import java.util.regex.Matcher;
  */
 @SuppressWarnings("NonAsciiCharacters")
 public class 日本語 {
-    // TODO: これを直せる
     static String
            正規表現の約物 = "[\u3000-\u303F]",
            正規表現の平仮名 = "[\u3040-\u309f]",
