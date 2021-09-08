@@ -8,6 +8,9 @@
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
+// Collections
+import java.util.HashMap;
+
 /**
  * 日本語（にほんご）
  */
@@ -74,6 +77,12 @@ public class 日本語 {
         }
 
         return stringBuilder.toString();
+    }
+
+    public static HashMap<String, Integer> 文字の回数を受けます(String str, String type) {
+        return new HashMap<>() {{
+            put(type, 日本語を抜き出す(str, type).length());
+        }};
     }
 
     public static void main(String[] args) {
