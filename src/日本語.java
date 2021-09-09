@@ -79,6 +79,12 @@ public class 日本語 {
         return stringBuilder.toString();
     }
 
+    /**
+     * 文字の回数を受けます（もじのかいすうをうけます）
+     * @param str ストリングを提供する
+     * @param type タイプ
+     * @return 日本語の統計のHashMapです
+     */
     public static HashMap<String, Integer> 文字の回数を受けます(String str, String type) {
         return new HashMap<>() {{
             put(type, 日本語を抜き出す(str, type).length());
