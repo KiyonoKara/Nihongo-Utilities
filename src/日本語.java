@@ -25,6 +25,19 @@ public class 日本語 {
            正規表現の拡張CJK = "[\u3400-\u4dbf]]",
            正規表現の全部 = "[\u3000-\u303F]|[\u3040-\u309F]|[\u30A0-\u30FF]|[\uFF00-\uFFEF]|[\u4E00-\u9FAF]|[\u2605-\u2606]|[\u2190-\u2195]|\u203B|[0-9]";
 
+    private static final HashMap<Character, Character> 平仮名と片仮名 = new HashMap<>() {{
+        put('あ', 'ア');
+        put('い', 'イ');
+        put('う', 'ウ');
+        put('え', 'エ');
+        put('お', 'オ');
+        put('か', 'カ');
+        put('き', 'キ');
+        put('く', 'ク');
+        put('け', 'ケ');
+        put('こ', 'コ');
+    }};
+
     /**
      * 盛れる（もれる）
      * @param str ストリングを提供する
