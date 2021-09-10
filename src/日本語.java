@@ -111,6 +111,6 @@ public class 日本語 {
         System.out.println(日本語を抜き出す("おいしい.本当に!!!", "平仮名"));
         System.out.println(日本語を抜き出す("本当に。", "約物"));
         System.out.println(文字の回数を受けます("日本語を話します", "全部"));
-        System.out.println(文字の回数を受けます("日本語を話します", new String[]{"全部", "約物", "平仮名"}));
+        System.out.println(文字の回数を受けます("日本語を話します", new String[]{"全部", "約物", "平仮名", "CJK"}));
     }
 }
