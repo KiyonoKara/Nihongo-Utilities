@@ -95,6 +95,41 @@ public class 日本語 {
 
         // Nasal vowels
         put('ん', 'ん');
+
+        // Dakuten G
+        put('が', 'ガ');
+        put('ぎ', 'ギ');
+        put('ぐ', 'グ');
+        put('げ', 'ゲ');
+        put('ご', 'ゴ');
+
+        // Dakuten Z
+        put('ざ', 'ザ');
+        put('じ', 'ジ');
+        put('ず', 'ズ');
+        put('ぜ', 'ゼ');
+        put('ぞ', 'ゾ');
+
+        // Dakuten D
+        put('だ', 'ダ');
+        put('ぢ', 'ヂ');
+        put('づ', 'ヅ');
+        put('で', 'デ');
+        put('ど', 'ド');
+
+        // Dakuten B
+        put('ば', 'バ');
+        put('び', 'ビ');
+        put('ぶ', 'ブ');
+        put('べ', 'ベ');
+        put('ぼ', 'ボ');
+
+        // Handakuten P
+        put('ぱ', 'パ');
+        put('ぴ', 'ピ');
+        put('ぷ', 'プ');
+        put('ぺ', 'ペ');
+        put('ぽ', 'ポ');
     }};
 
     /**
