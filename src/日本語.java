@@ -226,7 +226,12 @@ public class 日本語 {
      * @return 平仮名のストリング
      */
     public static String を平仮名に変換(String str) {
-
+        for (int i = 0; i < str.length(); i++) {
+            if (片仮名と平仮名.containsKey(str.charAt(i))) {
+                str = str.replace(str.charAt(i), 片仮名と平仮名.get(str.charAt(i)));
+            }
+        }
+        return str;
     }
 
     public static void main(String[] args) {
@@ -235,5 +240,6 @@ public class 日本語 {
         System.out.println(日本語を抜き出す("本当に。", "約物"));
         System.out.println(文字の回数を受けます("日本語を話します", "全部"));
         System.out.println(文字の回数を受けます("日本語を話します", new String[]{"全部", "約物", "平仮名", "CJK"}));
+        System.out.println(を平仮名に変換("ワカッタ！"));
     }
 }
