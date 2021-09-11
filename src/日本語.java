@@ -220,6 +220,15 @@ public class 日本語 {
         }};
     }
 
+    /**
+     * を平仮名に変換（をひらがなにへんかん）
+     * @param str ストリングを提供する
+     * @return 平仮名のストリング
+     */
+    public static String を平仮名に変換(String str) {
+
+    }
+
     public static void main(String[] args) {
         System.out.println(盛れる("おいしい.本当に!!!"));
         System.out.println(日本語を抜き出す("おいしい.本当に!!!", "平仮名"));
