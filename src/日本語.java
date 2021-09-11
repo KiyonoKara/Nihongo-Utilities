@@ -238,7 +238,8 @@ public class 日本語 {
      */
     public static String を平仮名に変換(String str) {
         for (int i = 0; i < str.length(); i++) {
-            if (片仮名と平仮名.containsKey(str.charAt(i))) {
+            if (!(str.charAt(i) >= firstZenkakuKatakana && str.charAt(i) <= lastZenkakuKatakana)) break;
+            else if (片仮名と平仮名.containsKey(str.charAt(i))) {
                 str = str.replace(str.charAt(i), 片仮名と平仮名.get(str.charAt(i)));
             }
         }
