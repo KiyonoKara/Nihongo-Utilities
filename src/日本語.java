@@ -5,6 +5,7 @@
  */
 
 // 正規表現
+import java.util.Map;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
@@ -94,7 +95,7 @@ public class 日本語 {
         put('を', 'ヲ');
 
         // Nasal vowels
-        put('ん', 'ん');
+        put('ん', 'ン');
 
         // Dakuten G
         put('が', 'ガ');
@@ -130,6 +131,12 @@ public class 日本語 {
         put('ぷ', 'プ');
         put('ぺ', 'ペ');
         put('ぽ', 'ポ');
+    }};
+
+    private static final HashMap<Character, Character> 片仮名と平仮名 = new HashMap<>() {{
+        for (Map.Entry<Character, Character> entry : 平仮名と片仮名.entrySet()) {
+            put(entry.getValue(), entry.getKey());
+        }
     }};
 
     /**
