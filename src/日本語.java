@@ -26,21 +26,75 @@ public class 日本語 {
            正規表現の全部 = "[\u3000-\u303F]|[\u3040-\u309F]|[\u30A0-\u30FF]|[\uFF00-\uFFEF]|[\u4E00-\u9FAF]|[\u2605-\u2606]|[\u2190-\u2195]|\u203B|[0-9]";
 
     private static final HashMap<Character, Character> 平仮名と片仮名 = new HashMap<>() {{
+        // Vowels
         put('あ', 'ア');
         put('い', 'イ');
         put('う', 'ウ');
         put('え', 'エ');
         put('お', 'オ');
+
+        // K-column
         put('か', 'カ');
         put('き', 'キ');
         put('く', 'ク');
         put('け', 'ケ');
         put('こ', 'コ');
+
+        // S-column
         put('さ', 'サ');
         put('し', 'シ');
         put('す', 'ス');
         put('せ', 'セ');
         put('そ', 'ソ');
+
+        // T-column
+        put('た', 'タ');
+        put('ち', 'チ');
+        put('つ', 'ツ');
+        put('て', 'テ');
+        put('と', 'ト');
+
+        // N-column
+        put('な', 'ナ');
+        put('に', 'ニ');
+        put('ぬ', 'ヌ');
+        put('ね', 'ネ');
+        put('の', 'ノ');
+
+        // H-column
+        put('は', 'ハ');
+        put('ひ', 'ヒ');
+        put('ふ', 'フ');
+        put('へ', 'ヘ');
+        put('ほ', 'ホ');
+
+        // M-column
+        put('ま', 'マ');
+        put('み', 'ミ');
+        put('む', 'ム');
+        put('め', 'メ');
+        put('も', 'モ');
+
+        // Y-column
+        put('や', 'ヤ');
+        put('ゆ', 'ユ');
+        put('よ', 'ヨ');
+
+        // R-column
+        put('ら', 'ラ');
+        put('り', 'リ');
+        put('る', 'ル');
+        put('れ', 'レ');
+        put('ろ', 'ロ');
+
+        // W-column
+        put('わ', 'ワ');
+        put('ゐ', 'ヰ');
+        put('ゑ', 'ヱ');
+        put('を', 'ヲ');
+
+        // Nasal vowels
+        put('ん', 'ん');
     }};
 
     /**
