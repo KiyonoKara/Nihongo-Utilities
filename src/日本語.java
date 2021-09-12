@@ -26,6 +26,15 @@ public class 日本語 {
            正規表現の拡張CJK = "[\u3400-\u4dbf]]",
            正規表現の全部 = "[\u3000-\u303F]|[\u3040-\u309F]|[\u30A0-\u30FF]|[\uFF00-\uFFEF]|[\u4E00-\u9FAF]|[\u2605-\u2606]|[\u2190-\u2195]|\u203B|[0-9]";
 
+    // Zenkaku Hiragana Bounds
+    // First Hiragana character
+    // 最初の全角平仮名の文字
+    private static final char firstZenkakuHiragana = 'ぁ';
+
+    // Last Hiragana character
+    // 最後の全角平仮名の文字
+    private static final char lastZenkakuHiragana = 'ゖ';
+
     // Zenkaku Katakana Bounds
     // First Full-Width Katakana character
     // 最初の全角片仮名の文字
