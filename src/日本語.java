@@ -246,6 +246,16 @@ public class 日本語 {
         return str;
     }
 
+    /**
+     * 平仮名ですか（ひらがなですか）
+     * @param 一文字 一文字を提供する
+     * @return 真否
+     */
+    public static boolean 平仮名ですか(char 一文字) {
+        return true;
+        //return 一文字 >= '\u3041'
+    }
+
     public static void main(String[] args) {
         System.out.println(盛れる("おいしい.本当に!!!"));
         System.out.println(日本語を抜き出す("おいしい.本当に!!!", "平仮名"));
