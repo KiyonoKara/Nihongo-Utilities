@@ -261,8 +261,7 @@ public class 日本語 {
      * @return 真否
      */
     public static boolean 平仮名ですか(char 一文字) {
-        return true;
-        //return 一文字 >= '\u3041'
+        return 一文字 >= firstZenkakuHiragana && lastZenkakuHiragana >= 一文字;
     }
 
     public static void main(String[] args) {
