@@ -264,6 +264,15 @@ public class 日本語 {
         return 一文字 >= firstZenkakuHiragana && lastZenkakuHiragana >= 一文字;
     }
 
+    /**
+     * 片仮名ですか（かたかなですか）
+     * @param 一文字 一文字を提供する
+     * @return 真否
+     */
+    public static boolean 片仮名ですか(char 一文字) {
+        return 一文字 >= firstZenkakuKatakana && lastZenkakuKatakana >= 一文字;
+    }
+
     public static void main(String[] args) {
         System.out.println(盛れる("おいしい.本当に!!!"));
         System.out.println(日本語を抜き出す("おいしい.本当に!!!", "平仮名"));
@@ -271,5 +280,6 @@ public class 日本語 {
         System.out.println(文字の回数を受けます("日本語を話します", "全部"));
         System.out.println(文字の回数を受けます("日本語を話します", new String[]{"全部", "約物", "平仮名", "CJK"}));
         System.out.println(を平仮名に変換("ワカッタ！"));
+        System.out.println(平仮名ですか('ひ'));
     }
 }
