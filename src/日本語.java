@@ -291,5 +291,6 @@ public class 日本語 {
         System.out.println(を平仮名に変換("ワカッタ！"));
         System.out.println(平仮名ですか('ひ'));
         System.out.println(片仮名ですか('ヒ'));
+        System.out.println(平仮名を片仮名に変換('ふ'));
     }
 }
