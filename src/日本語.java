@@ -283,6 +283,16 @@ public class 日本語 {
     }
 
     /**
+     * 半角片仮名ですか（はんかくかたかなですか）
+     * @param 一文字 一文字を提供する
+     * @return 真否
+     */
+    public static boolean 半角片仮名ですか(char 一文字) {
+        return 一文字 >= firstHankakuKatakana && lastHankakuKatakana >= 一文字;
+    }
+
+
+    /**
      * 平仮名を片仮名に変換（ひらがなをかたかなにへんかん）
      * @param 一文字 一文字を提供する
      * @return 片仮名の一文字
