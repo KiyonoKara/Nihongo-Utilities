@@ -273,6 +273,15 @@ public class 日本語 {
         return 一文字 >= firstZenkakuKatakana && lastZenkakuKatakana >= 一文字;
     }
 
+    /**
+     * 平仮名を片仮名に変換（ひらがなをかたかなにへんかん）
+     * @param 一文字 一文字を提供する
+     * @return 片仮名の一文字
+     */
+    public static char 平仮名を片仮名に変換(char 一文字) {
+        return 平仮名ですか(一文字) ? (char) (一文字 + 0x60) : 一文字;
+    }
+
     public static void main(String[] args) {
         System.out.println(盛れる("おいしい.本当に!!!"));
         System.out.println(日本語を抜き出す("おいしい.本当に!!!", "平仮名"));
