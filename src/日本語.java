@@ -44,6 +44,15 @@ public class 日本語 {
     // 最後の全角片仮名の文字
     private static final char lastZenkakuKatakana = 'ヺ';
 
+    // Hankaku Katakana Bounds
+    // First Half-Width Katakana character
+    // 最初の半角片仮名のー文字　
+    private static final char firstHankakuKatakana = 'ｦ';
+
+    // Last Half-Width Katakana character
+    // 最後の半角片仮名のー文字　
+    private static final char lastHankakuKatakana = 'ﾝ';
+
     private static final HashMap<Character, Character> 平仮名と片仮名 = new HashMap<>() {{
         // Vowels
         put('あ', 'ア');
