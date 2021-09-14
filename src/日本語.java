@@ -309,6 +309,7 @@ public class 日本語 {
     public static char 片仮名を平仮名に変換(char 一文字) {
         return 片仮名ですか(一文字) ?
                 (char) (一文字 - 0x60) : 半角片仮名ですか(一文字) ?
+                // TODO: Fix this
                 (char) (一文字 - 0xcf25) : 一文字;
     }
 
@@ -322,5 +323,7 @@ public class 日本語 {
         System.out.println(平仮名ですか('ひ'));
         System.out.println(片仮名ですか('ヒ'));
         System.out.println(平仮名を片仮名に変換('ふ'));
+        System.out.println(片仮名を平仮名に変換('ハ'));
+        System.out.println(片仮名を平仮名に変換('ﾊ'));
     }
 }
