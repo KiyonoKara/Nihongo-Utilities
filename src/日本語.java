@@ -307,7 +307,7 @@ public class 日本語 {
      * @return 平仮名の一文字
      */
     public static char 片仮名を平仮名に変換(char 一文字) {
-        return 片仮名ですか(一文字) ? (char) (一文字 - 0x60) : 一文字;
+        return 片仮名ですか(一文字) ? (char) (一文字 - 0x60) : 半角片仮名ですか(一文字) ? (char) (一文字 - 0xcf25) : 一文字;
     }
 
     public static void main(String[] args) {
