@@ -282,6 +282,15 @@ public class 日本語 {
         return 平仮名ですか(一文字) ? (char) (一文字 + 0x60) : 一文字;
     }
 
+    /**
+     * 片仮名を平仮名に変換（かたかなをひらがなにへんかん）
+     * @param 一文字 一文字を提供する
+     * @return 平仮名の一文字
+     */
+    public static char 片仮名を平仮名に変換(char 一文字) {
+        return 片仮名ですか(一文字) ? (char) (一文字 - 0x60) : 一文字;
+    }
+
     public static void main(String[] args) {
         System.out.println(盛れる("おいしい.本当に!!!"));
         System.out.println(日本語を抜き出す("おいしい.本当に!!!", "平仮名"));
