@@ -274,11 +274,11 @@ public class 日本語 {
     }
 
     /**
-     * 片仮名ですか（かたかなですか）
+     * 全角片仮名ですか（ぜんかくかたかなですか）
      * @param 一文字 一文字を提供する
      * @return 真否
      */
-    public static boolean 片仮名ですか(char 一文字) {
+    public static boolean 全角片仮名ですか(char 一文字) {
         return 一文字 >= firstZenkakuKatakana && lastZenkakuKatakana >= 一文字;
     }
 
@@ -307,7 +307,7 @@ public class 日本語 {
      * @return 平仮名の一文字
      */
     public static char 片仮名を平仮名に変換(char 一文字) {
-        return 片仮名ですか(一文字) ?
+        return 全角片仮名ですか(一文字) ?
                 (char) (一文字 - 0x60) : 半角片仮名ですか(一文字) ?
                 // TODO: Fix this
                 (char) (一文字 - 0xcf25) : 一文字;
@@ -321,9 +321,10 @@ public class 日本語 {
         System.out.println(文字の回数を受けます("日本語を話します", new String[]{"全部", "約物", "平仮名", "CJK"}));
         System.out.println(を平仮名に変換("ワカッタ！"));
         System.out.println(平仮名ですか('ひ'));
-        System.out.println(片仮名ですか('ヒ'));
+        System.out.println(全角片仮名ですか('ヒ'));
         System.out.println(平仮名を片仮名に変換('ふ'));
         System.out.println(片仮名を平仮名に変換('ハ'));
         System.out.println(片仮名を平仮名に変換('ﾊ'));
+        System.out.println(全角片仮名ですか('ﾊ'));
     }
 }
