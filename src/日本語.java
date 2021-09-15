@@ -325,6 +325,6 @@ public class 日本語 {
         System.out.println(平仮名を片仮名に変換('ふ'));
         System.out.println(片仮名を平仮名に変換('ハ'));
         System.out.println(片仮名を平仮名に変換('ﾊ'));
-        System.out.println(全角片仮名ですか('ﾊ'));
+        System.out.println(半角片仮名ですか('ﾊ'));
     }
 }
