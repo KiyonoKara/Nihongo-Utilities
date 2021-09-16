@@ -255,13 +255,13 @@ public class 日本語 {
      * @return 平仮名のストリング
      */
     public static String を平仮名に変換(String str) {
+        StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i < str.length(); i++) {
-            if (!(str.charAt(i) >= firstZenkakuKatakana && str.charAt(i) <= lastZenkakuKatakana)) break;
-            else if (片仮名と平仮名.containsKey(str.charAt(i))) {
-                str = str.replace(str.charAt(i), 片仮名と平仮名.get(str.charAt(i)));
-            }
+            if (全角片仮名ですか(str.charAt(i)) || 半角片仮名ですか(str.charAt(i))) {
+                stringBuilder.append(片仮名を平仮名に変換(str.charAt(i)));
+            } else stringBuilder.append(str.charAt(i));
         }
-        return str;
+        return stringBuilder.toString();
     }
 
     /**
@@ -309,6 +309,7 @@ public class 日本語 {
     public static char 片仮名を平仮名に変換(char 一文字) {
         return 全角片仮名ですか(一文字) ?
                 (char) (一文字 - 0x60) : 半角片仮名ですか(一文字) ?
+                // TODO: Fix half-with
                 (char) (一文字 - 0xcf1b) : 一文字;
     }
 
@@ -325,5 +326,8 @@ public class 日本語 {
         System.out.println(片仮名を平仮名に変換('ハ'));
         System.out.println(片仮名を平仮名に変換('ﾊ'));
         System.out.println(片仮名を平仮名に変換('ﾇ'));
+
+        // TODO: Fix half-width
+        System.out.println(を平仮名に変換("ｱﾘｶﾞﾄｳｺﾞｻﾞｲﾏｽ"));
     }
 }
