@@ -158,8 +158,6 @@ public class 日本語 {
         put('ぷ', 'プ');
         put('ぺ', 'ペ');
         put('ぽ', 'ポ');
-
-
     }};
 
     private static final HashMap<Character, Character> 片仮名と平仮名 = new HashMap<>() {{
@@ -310,7 +308,7 @@ public class 日本語 {
         return 全角片仮名ですか(一文字) ?
                 (char) (一文字 - 0x60) : 半角片仮名ですか(一文字) ?
                 // TODO: Fix half-with
-                (char) (一文字 - 0xcf1b) : 一文字;
+                (char) (一文字 - (firstZenkakuKatakana + firstZenkakuHiragana)) : 一文字;
     }
 
     public static void main(String[] args) {
