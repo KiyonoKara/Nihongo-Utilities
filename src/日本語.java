@@ -166,6 +166,72 @@ public class 日本語 {
         }
     }};
 
+    private static final HashMap<Character, Character> 半角片仮名と全角片仮名 = new HashMap<>() {{
+        put('｡', '。');
+        put('｢', '「');
+        put('｣', '」');
+        put('､', '、');
+        put('･', '・');
+        put('ｦ', 'ヲ');
+        put('ｧ', 'ァ');
+        put('ｨ', 'ィ');
+        put('ｩ', 'ゥ');
+        put('ｪ', 'ェ');
+        put('ｫ', 'ォ');
+        put('ｬ', 'ャ');
+        put('ｭ', 'ュ');
+        put('ｮ', 'ョ');
+        put('ｯ', 'ッ');
+        put('ｰ', 'ー');
+        put('ｱ', 'ア');
+        put('ｲ', 'イ');
+        put('ｳ', 'ウ');
+        put('ｴ', 'エ');
+        put('ｵ', 'オ');
+        put('ｶ', 'カ');
+        put('ｷ', 'キ');
+        put('ｸ', 'ク');
+        put('ｹ', 'ケ');
+        put('ｺ', 'コ');
+        put('ｻ', 'サ');
+        put('ｼ', 'シ');
+        put('ｽ', 'ス');
+        put('ｾ', 'セ');
+        put('ｿ', 'ソ');
+        put('ﾀ', 'タ');
+        put('ﾁ', 'チ');
+        put('ﾂ', 'ツ');
+        put('ﾃ', 'テ');
+        put('ﾄ', 'ト');
+        put('ﾅ', 'ナ');
+        put('ﾆ', 'ニ');
+        put('ﾇ', 'ヌ');
+        put('ﾈ', 'ネ');
+        put('ﾉ', 'ノ');
+        put('ﾊ', 'ハ');
+        put('ﾋ', 'ヒ');
+        put('ﾌ', 'フ');
+        put('ﾍ', 'ヘ');
+        put('ﾎ', 'ホ');
+        put('ﾏ', 'マ');
+        put('ﾐ', 'ミ');
+        put('ﾑ', 'ム');
+        put('ﾒ', 'メ');
+        put('ﾓ', 'モ');
+        put('ﾔ', 'ヤ');
+        put('ﾕ', 'ユ');
+        put('ﾖ', 'ヨ');
+        put('ﾗ', 'ラ');
+        put('ﾘ', 'リ');
+        put('ﾙ', 'ル');
+        put('ﾚ', 'レ');
+        put('ﾛ', 'ロ');
+        put('ﾜ', 'ワ');
+        put('ﾝ', 'ン');
+        put('ﾞ', '゛');
+        put('ﾟ', '゜');
+    }};
+
     /**
      * 盛れる（もれる）
      * @param str ストリングを提供する
@@ -307,8 +373,7 @@ public class 日本語 {
     public static char 片仮名を平仮名に変換(char 一文字) {
         return 全角片仮名ですか(一文字) ?
                 (char) (一文字 - 0x60) : 半角片仮名ですか(一文字) ?
-                // TODO: Fix half-with
-                (char) (一文字 - (firstZenkakuKatakana + firstZenkakuHiragana)) : 一文字;
+                (半角片仮名と全角片仮名.get(一文字)) : 一文字;
     }
 
     public static void main(String[] args) {
@@ -324,8 +389,6 @@ public class 日本語 {
         System.out.println(片仮名を平仮名に変換('ハ'));
         System.out.println(片仮名を平仮名に変換('ﾊ'));
         System.out.println(片仮名を平仮名に変換('ﾇ'));
-
-        // TODO: Fix half-width
         System.out.println(を平仮名に変換("ｱﾘｶﾞﾄｳｺﾞｻﾞｲﾏｽ"));
     }
 }
