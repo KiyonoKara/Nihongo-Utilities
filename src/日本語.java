@@ -167,67 +167,100 @@ public class 日本語 {
     }};
 
     private static final HashMap<Character, Character> 半角片仮名と全角片仮名 = new HashMap<>() {{
+        // Punctuation
         put('｡', '。');
         put('｢', '「');
         put('｣', '」');
         put('､', '、');
         put('･', '・');
+
+        // W-column
         put('ｦ', 'ヲ');
+        put('ﾜ', 'ワ');
+
+        // Vowels (To Half-width Hiragana)
         put('ｧ', 'ァ');
         put('ｨ', 'ィ');
         put('ｩ', 'ゥ');
         put('ｪ', 'ェ');
         put('ｫ', 'ォ');
+
+        // Hankaku Y-column
         put('ｬ', 'ャ');
         put('ｭ', 'ュ');
         put('ｮ', 'ョ');
+
+        // Glottal stop
         put('ｯ', 'ッ');
+
+        // Prolonged sound mark
         put('ｰ', 'ー');
+
+        // Vowels
         put('ｱ', 'ア');
         put('ｲ', 'イ');
         put('ｳ', 'ウ');
         put('ｴ', 'エ');
         put('ｵ', 'オ');
+
+        // K-column
         put('ｶ', 'カ');
         put('ｷ', 'キ');
         put('ｸ', 'ク');
         put('ｹ', 'ケ');
         put('ｺ', 'コ');
+
+        // S-column
         put('ｻ', 'サ');
         put('ｼ', 'シ');
         put('ｽ', 'ス');
         put('ｾ', 'セ');
         put('ｿ', 'ソ');
+
+        // T-column
         put('ﾀ', 'タ');
         put('ﾁ', 'チ');
         put('ﾂ', 'ツ');
         put('ﾃ', 'テ');
         put('ﾄ', 'ト');
+
+        // N-column
         put('ﾅ', 'ナ');
         put('ﾆ', 'ニ');
         put('ﾇ', 'ヌ');
         put('ﾈ', 'ネ');
         put('ﾉ', 'ノ');
+
+        // H-column
         put('ﾊ', 'ハ');
         put('ﾋ', 'ヒ');
         put('ﾌ', 'フ');
         put('ﾍ', 'ヘ');
         put('ﾎ', 'ホ');
+
+        // M-column
         put('ﾏ', 'マ');
         put('ﾐ', 'ミ');
         put('ﾑ', 'ム');
         put('ﾒ', 'メ');
         put('ﾓ', 'モ');
+
+        // Y-column
         put('ﾔ', 'ヤ');
         put('ﾕ', 'ユ');
         put('ﾖ', 'ヨ');
+
+        // R-column
         put('ﾗ', 'ラ');
         put('ﾘ', 'リ');
         put('ﾙ', 'ル');
         put('ﾚ', 'レ');
         put('ﾛ', 'ロ');
-        put('ﾜ', 'ワ');
+
+        // Nasal vowels
         put('ﾝ', 'ン');
+
+        // Dakuten & Handakuten
         put('ﾞ', '゛');
         put('ﾟ', '゜');
     }};
