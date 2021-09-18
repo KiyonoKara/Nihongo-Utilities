@@ -175,8 +175,8 @@ public class 日本語 {
         put('･', '・');
 
         // W-column
-        put('ｦ', 'ヲ');
         put('ﾜ', 'ワ');
+        put('ｦ', 'ヲ');
 
         // Vowels (To Half-width Hiragana)
         put('ｧ', 'ァ');
