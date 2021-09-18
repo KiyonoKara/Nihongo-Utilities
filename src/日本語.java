@@ -312,9 +312,7 @@ public class 日本語 {
         Pattern patternJP = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
         Matcher matcherJP = patternJP.matcher(str);
 
-        while (matcherJP.find()) {
-            stringBuilder.append(matcherJP.group());
-        }
+        while (matcherJP.find()) stringBuilder.append(matcherJP.group());
 
         return stringBuilder.toString();
     }
