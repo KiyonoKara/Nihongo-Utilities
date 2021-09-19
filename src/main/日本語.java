@@ -1,4 +1,4 @@
-/*
+package main;/*
  * 作成日：２０２１年９月３日
  * 名前：マキヨムの変換器（マキヨムのへんかんき）
  * 氏名：マキヨムの並直列変換器（マキヨムのへいちょくれつへんかんき）
@@ -13,7 +13,7 @@ import java.util.Map;
 import java.util.HashMap;
 
 /**
- * 日本語（にほんご）
+ * main.日本語（にほんご）
  */
 @SuppressWarnings("NonAsciiCharacters")
 public class 日本語 {
@@ -420,22 +420,5 @@ public class 日本語 {
         return 全角片仮名ですか(一文字) ?
                 (char) (一文字 - 0x60) : 半角片仮名ですか(一文字) ?
                 (半角片仮名と全角片仮名.get(一文字)) : 一文字;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(盛れる("おいしい.本当に!!!"));
-        System.out.println(日本語を抜き出す("おいしい.本当に!!!", "平仮名"));
-        System.out.println(日本語を抜き出す("本当に。", "約物"));
-        System.out.println(文字の回数を受けます("日本語を話します", "全部"));
-        System.out.println(文字の回数を受けます("日本語を話します", new String[]{"全部", "約物", "平仮名", "CJK"}));
-        System.out.println(を平仮名に変換("ワカッタ！"));
-        System.out.println(平仮名ですか('ひ'));
-        System.out.println(全角片仮名ですか('ヒ'));
-        System.out.println(平仮名を片仮名に変換('ふ'));
-        System.out.println(片仮名を平仮名に変換('ハ'));
-        System.out.println(片仮名を平仮名に変換('ﾊ'));
-        System.out.println(片仮名を平仮名に変換('ﾇ'));
-        System.out.println(を平仮名に変換("ｱﾘｶﾞﾄｳｺﾞｻﾞｲﾏｽ"));
-        System.out.println(を片仮名に変換("おはようございます"));
     }
 }
