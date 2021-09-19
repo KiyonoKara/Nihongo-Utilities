@@ -436,5 +436,6 @@ public class 日本語 {
         System.out.println(片仮名を平仮名に変換('ﾊ'));
         System.out.println(片仮名を平仮名に変換('ﾇ'));
         System.out.println(を平仮名に変換("ｱﾘｶﾞﾄｳｺﾞｻﾞｲﾏｽ"));
+        System.out.println(を片仮名に変換("おはようございます"));
     }
 }
