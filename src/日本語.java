@@ -359,6 +359,11 @@ public class 日本語 {
         return stringBuilder.toString();
     }
 
+    /**
+     * を片仮名に変換（を片仮名にへんかん）
+     * @param str ストリングを提供する
+     * @return 片仮名のストリング
+     */
     public static String を片仮名に変換(String str) {
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i < str.length(); i++) {
