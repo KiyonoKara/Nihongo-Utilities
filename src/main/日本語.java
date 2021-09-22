@@ -36,20 +36,20 @@ public class 日本語 {
     private static final char lastZenkakuHiragana = 'ゖ';
 
     // Zenkaku Katakana Bounds
-    // First Full-Width Katakana character
+    // First Full-Width Katakana character, U+30A1
     // 最初の全角片仮名の文字
     private static final char firstZenkakuKatakana = 'ァ';
 
-    // Last Full-Width Katakana character
+    // Last Full-Width Katakana character, U+30FA
     // 最後の全角片仮名の文字
     private static final char lastZenkakuKatakana = 'ヺ';
 
     // Hankaku Katakana Bounds
-    // First Half-Width Katakana character
+    // First Half-Width Katakana character, U+FF66
     // 最初の半角片仮名のー文字　
     private static final char firstHankakuKatakana = 'ｦ';
 
-    // Last Half-Width Katakana character
+    // Last Half-Width Katakana character, U+FF9D
     // 最後の半角片仮名のー文字　
     private static final char lastHankakuKatakana = 'ﾝ';
 
