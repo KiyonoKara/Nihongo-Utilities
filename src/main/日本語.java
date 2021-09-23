@@ -161,6 +161,7 @@ public class 日本語 {
         put('ぽ', 'ポ');
     }};
 
+    // HashMap of Katakana to Hiragana
     private static final HashMap<Character, Character> 片仮名と平仮名 = new HashMap<>() {{
         for (Map.Entry<Character, Character> entry : 平仮名と片仮名.entrySet()) {
             put(entry.getValue(), entry.getKey());
