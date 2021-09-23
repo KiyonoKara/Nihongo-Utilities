@@ -53,6 +53,7 @@ public class 日本語 {
     // 最後の半角片仮名のー文字　
     private static final char lastHankakuKatakana = 'ﾝ';
 
+    // HashMap of Hiragana to Katakana
     private static final HashMap<Character, Character> 平仮名と片仮名 = new HashMap<>() {{
         // Vowels
         put('あ', 'ア');
