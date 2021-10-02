@@ -349,7 +349,7 @@ public class 日本語 {
     /**
      * を平仮名に変換（をひらがなにへんかん）
      * @param str ストリングを提供する
-     * @return 平仮名のストリング
+     * @return 平仮名の文字列
      */
     public static String を平仮名に変換(String str) {
         StringBuilder stringBuilder = new StringBuilder();
