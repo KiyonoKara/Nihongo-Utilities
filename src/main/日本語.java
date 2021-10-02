@@ -270,7 +270,7 @@ public class 日本語 {
     /**
      * 盛れる（もれる）
      * @param str ストリングを提供する
-     * @return 綺麗ストリング
+     * @return 綺麗文字列
      */
     public static String 盛れる(String str) {
         return str
