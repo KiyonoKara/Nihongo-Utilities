@@ -378,7 +378,7 @@ public class 日本語 {
 
     /**
      * 平仮名ですか（ひらがなですか）
-     * @param 一文字 一文字を提供する
+     * @param 一文字 一文字を提供します
      * @return 真否
      */
     public static boolean 平仮名ですか(char 一文字) {
