@@ -288,7 +288,7 @@ public class 日本語 {
      * 日本語を抜き出す（にほんごをぬきだす）
      * @param str ストリングを提供する
      * @param type タイプ
-     * @return 日本語のみのストリング
+     * @return 日本語のみの文字列
      */
     public static String 日本語を抜き出す(String str, String type) {
         return switch (type.toUpperCase()) {
@@ -364,7 +364,7 @@ public class 日本語 {
     /**
      * を片仮名に変換（を片仮名にへんかん）
      * @param str ストリングを提供する
-     * @return 片仮名のストリング
+     * @return 片仮名の文字列
      */
     public static String を片仮名に変換(String str) {
         StringBuilder stringBuilder = new StringBuilder();
