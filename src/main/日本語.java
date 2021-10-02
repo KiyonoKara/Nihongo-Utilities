@@ -387,7 +387,7 @@ public class 日本語 {
 
     /**
      * 全角片仮名ですか（ぜんかくかたかなですか）
-     * @param 一文字 一文字を提供する
+     * @param 一文字 一文字を提供します
      * @return 真否
      */
     public static boolean 全角片仮名ですか(char 一文字) {
