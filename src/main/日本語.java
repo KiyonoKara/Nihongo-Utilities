@@ -406,7 +406,7 @@ public class 日本語 {
 
     /**
      * 平仮名を片仮名に変換（ひらがなをかたかなにへんかん）
-     * @param 一文字 一文字を提供する
+     * @param 一文字 一文字を提供します
      * @return 片仮名の一文字
      */
     public static char 平仮名を片仮名に変換(char 一文字) {
