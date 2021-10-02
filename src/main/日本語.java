@@ -396,7 +396,7 @@ public class 日本語 {
 
     /**
      * 半角片仮名ですか（はんかくかたかなですか）
-     * @param 一文字 一文字を提供する
+     * @param 一文字 一文字を提供します
      * @return 真否
      */
     public static boolean 半角片仮名ですか(char 一文字) {
