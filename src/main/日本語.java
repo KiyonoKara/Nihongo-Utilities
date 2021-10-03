@@ -381,6 +381,11 @@ public class 日本語 {
         return stringBuilder.toString();
     }
 
+    /**
+     * を半角片仮名に変換（をはんかくかたかなにへんかん）
+     * @param str - ストリングを提供する
+     * @return 半角片仮名の文字列
+     */
     public static String を半角片仮名に変換(String str) {
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i < str.length(); i++) {
