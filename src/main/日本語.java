@@ -410,6 +410,11 @@ public class 日本語 {
         return 一文字 >= firstHankakuKatakana && lastHankakuKatakana >= 一文字;
     }
 
+    /**
+     * 片仮名ですか（かたかなですか）
+     * @param 一文字 一文字を提供します
+     * @return 真否
+     */
     public static boolean 片仮名ですか(char 一文字) {
         return 全角片仮名ですか(一文字) || 半角片仮名ですか(一文字);
     }
