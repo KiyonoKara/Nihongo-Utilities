@@ -410,6 +410,9 @@ public class 日本語 {
         return 一文字 >= firstHankakuKatakana && lastHankakuKatakana >= 一文字;
     }
 
+    public static boolean 片仮名ですか(char 一文字) {
+        return 全角片仮名ですか(一文字) || 半角片仮名ですか(一文字);
+    }
 
     /**
      * 平仮名を片仮名に変換（ひらがなをかたかなにへんかん）
