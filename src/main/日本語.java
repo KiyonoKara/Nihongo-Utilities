@@ -375,6 +375,14 @@ public class 日本語 {
         return stringBuilder.toString();
     }
 
+//    public static String を半角片仮名に変換(String str) {
+//        StringBuilder stringBuilder = new StringBuilder();
+//        for (int i = 0; i < str.length(); i++) {
+//            if (平仮名ですか(str.charAt(i)) || 片仮名ですか)
+//        }
+//
+//    }
+
     /**
      * 平仮名ですか（ひらがなですか）
      * @param 一文字 一文字を提供します
