@@ -266,6 +266,12 @@ public class 日本語 {
         put('ﾟ', '゜');
     }};
 
+    // HashMap of Zenkaku Katakana to Hankaku Katakana
+    private static final HashMap<Character, Character> 全角片仮名と半角平仮名 = new HashMap<>() {{
+        for (Map.Entry<Character, Character> entry : 半角片仮名と全角片仮名.entrySet())
+            put(entry.getValue(), entry.getKey());
+    }};
+
     /**
      * 盛れる（もれる）
      * @param str ストリングを提供する
@@ -375,13 +381,19 @@ public class 日本語 {
         return stringBuilder.toString();
     }
 
-//    public static String を半角片仮名に変換(String str) {
-//        StringBuilder stringBuilder = new StringBuilder();
-//        for (int i = 0; i < str.length(); i++) {
-//            if (平仮名ですか(str.charAt(i)) || 片仮名ですか)
-//        }
-//
-//    }
+    public static String を半角片仮名に変換(String str) {
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < str.length(); i++) {
+            char kana = str.charAt(i);
+            if (平仮名ですか(kana))
+                stringBuilder.append(全角片仮名と半角平仮名.get(平仮名を片仮名に変換(kana)));
+            else if (片仮名ですか(kana))
+                stringBuilder.append(全角片仮名と半角平仮名.get(kana));
+            else
+                stringBuilder.append(kana);
+        }
+        return stringBuilder.toString();
+    }
 
     /**
      * 平仮名ですか（ひらがなですか）
