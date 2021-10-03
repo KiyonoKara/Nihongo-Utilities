@@ -163,9 +163,8 @@ public class 日本語 {
 
     // HashMap of Katakana to Hiragana
     private static final HashMap<Character, Character> 片仮名と平仮名 = new HashMap<>() {{
-        for (Map.Entry<Character, Character> entry : 平仮名と片仮名.entrySet()) {
+        for (Map.Entry<Character, Character> entry : 平仮名と片仮名.entrySet())
             put(entry.getValue(), entry.getKey());
-        }
     }};
 
     private static final HashMap<Character, Character> 半角片仮名と全角片仮名 = new HashMap<>() {{
