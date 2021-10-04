@@ -18,5 +18,6 @@ public class Test {
         System.out.println(日本語.片仮名を平仮名に変換('ﾇ'));
         System.out.println(日本語.を平仮名に変換("ｱﾘｶﾞﾄｳｺﾞｻﾞｲﾏｽ"));
         System.out.println(日本語.を片仮名に変換("おはようございます"));
+        System.out.println(日本語.を半角片仮名に変換("何でもありません"));
     }
 }
