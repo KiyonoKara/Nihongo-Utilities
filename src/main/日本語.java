@@ -393,6 +393,7 @@ public class 日本語 {
             if (平仮名ですか(kana))
                 stringBuilder.append(全角片仮名と半角平仮名.get(平仮名を片仮名に変換(kana)));
             else if (片仮名ですか(kana))
+                // TODO: Handle dakuten and handakuten
                 stringBuilder.append(全角片仮名と半角平仮名.get(kana));
             else
                 stringBuilder.append(kana);
