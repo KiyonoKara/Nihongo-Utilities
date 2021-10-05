@@ -433,6 +433,7 @@ public class 日本語 {
         for (int i = 0; i < str.length(); i++) {
             char kana = str.charAt(i);
             if (平仮名ですか(kana))
+                if (濁点ですか(kana) || 半濁点ですか(kana))
                 stringBuilder.append(全角片仮名と半角平仮名.get(平仮名を片仮名に変換(kana)));
             else if (片仮名ですか(kana))
                 // TODO: Handle dakuten and handakuten
@@ -504,10 +505,8 @@ public class 日本語 {
      * @param 一文字 一文字を提供します
      * @return 濁点の一文字
      */
-    public static char 濁点ですか(char 一文字) {
-        return 濁点平仮名と片仮名.containsKey(一文字) ?
-                濁点平仮名と片仮名.get(一文字) :
-                濁点平仮名と片仮名.getOrDefault(片仮名を平仮名に変換(一文字), 一文字);
+    public static boolean 濁点ですか(char 一文字) {
+        return 濁点平仮名と片仮名.containsKey(一文字) || 濁点平仮名と片仮名.containsKey(片仮名を平仮名に変換(一文字));
     }
 
     /**
@@ -515,9 +514,7 @@ public class 日本語 {
      * @param 一文字 一文字を提供します
      * @return 半濁点の一文字
      */
-    public static char 半濁点ですか(char 一文字) {
-        return 半濁点平仮名と片仮名.containsKey(一文字) ?
-                半濁点平仮名と片仮名.get(一文字) :
-                半濁点平仮名と片仮名.getOrDefault(片仮名を平仮名に変換(一文字), 一文字);
+    public static boolean 半濁点ですか(char 一文字) {
+        return 半濁点平仮名と片仮名.containsKey(一文字) || 半濁点平仮名と片仮名.containsKey(片仮名を平仮名に変換(一文字));
     }
 }
