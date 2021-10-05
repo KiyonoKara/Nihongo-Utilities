@@ -499,7 +499,7 @@ public class 日本語 {
                 (半角片仮名と全角片仮名.get(一文字)) : 一文字;
     }
 
-//    public static char 濁点ですか(char 一文字) {
-//
-//    }
+    public static char 濁点ですか(char 一文字) {
+
+    }
 }
