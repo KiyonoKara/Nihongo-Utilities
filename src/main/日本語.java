@@ -500,6 +500,8 @@ public class 日本語 {
     }
 
     public static char 濁点ですか(char 一文字) {
-
+        return 濁点平仮名と片仮名.containsKey(一文字) ?
+                濁点平仮名と片仮名.get(一文字) :
+                濁点平仮名と片仮名.getOrDefault(片仮名を平仮名に変換(一文字), 一文字);
     }
 }
