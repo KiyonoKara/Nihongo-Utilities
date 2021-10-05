@@ -23,12 +23,20 @@ public class Test {
 
         // 全角片仮名ですか
         System.out.println(日本語.全角片仮名ですか('ヒ'));
+
+        // 平仮名を片仮名に変換
         System.out.println(日本語.平仮名を片仮名に変換('ふ'));
+
+        // 片仮名を平仮名に変換
         System.out.println(日本語.片仮名を平仮名に変換('ハ'));
         System.out.println(日本語.片仮名を平仮名に変換('ﾊ'));
         System.out.println(日本語.片仮名を平仮名に変換('ﾇ'));
+
+        // を平仮名に変換
         System.out.println(日本語.を平仮名に変換("ｱﾘｶﾞﾄｳｺﾞｻﾞｲﾏｽ"));
         System.out.println(日本語.を片仮名に変換("おはようございます"));
+
+        // を半角片仮名に変換
         System.out.println(日本語.を半角片仮名に変換("何でもありません"));
     }
 }
