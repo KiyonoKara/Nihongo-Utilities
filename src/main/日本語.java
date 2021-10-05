@@ -435,8 +435,12 @@ public class 日本語 {
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i < str.length(); i++) {
             char kana = str.charAt(i);
-            if (濁点ですか(kana) || 半濁点ですか(kana))
-                stringBuilder.append(Normalizer.normalize(String.valueOf(kana), Normalizer.Form.NFD).replace("゙", "").replace("゚", ""));
+            if (濁点ですか(kana) || 半濁点ですか(kana)) {
+                String normalizedKana = Normalizer.normalize(String.valueOf(kana), Normalizer.Form.NFD);
+                String regularKana = normalizedKana.replace("゙", "").replace("゚", "");
+                stringBuilder.append(全角片仮名と半角平仮名.get(平仮名を片仮名に変換(regularKana.charAt(0))));
+                stringBuilder.append(normalizedKana.endsWith("゙") ? 'ﾞ' : 'ﾟ');
+            }
             else if (平仮名ですか(kana))
                 stringBuilder.append(全角片仮名と半角平仮名.get(平仮名を片仮名に変換(kana)));
             else if (片仮名ですか(kana))
