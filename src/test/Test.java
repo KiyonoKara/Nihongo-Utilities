@@ -43,6 +43,8 @@ public class Test {
         System.out.println(日本語.濁点ですか('で'));
         System.out.println(日本語.濁点ですか('デ'));
 
-
+        // 半濁点ですか
+        System.out.println(日本語.半濁点ですか('ぱ'));
+        System.out.println(日本語.半濁点ですか('パ'));
     }
 }
