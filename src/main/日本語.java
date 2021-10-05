@@ -12,6 +12,9 @@ import java.util.regex.Matcher;
 import java.util.Map;
 import java.util.HashMap;
 
+// Text
+import java.text.Normalizer;
+
 /**
  * main.日本語（にほんご）
  */
@@ -432,11 +435,11 @@ public class 日本語 {
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i < str.length(); i++) {
             char kana = str.charAt(i);
-            if (平仮名ですか(kana))
-                if (濁点ですか(kana) || 半濁点ですか(kana))
+            if (濁点ですか(kana) || 半濁点ですか(kana))
+                stringBuilder.append(Normalizer.normalize(String.valueOf(kana), Normalizer.Form.NFD).replace("゙", "").replace("゚", ""));
+            else if (平仮名ですか(kana))
                 stringBuilder.append(全角片仮名と半角平仮名.get(平仮名を片仮名に変換(kana)));
             else if (片仮名ですか(kana))
-                // TODO: Handle dakuten and handakuten
                 stringBuilder.append(全角片仮名と半角平仮名.get(kana));
             else
                 stringBuilder.append(kana);
