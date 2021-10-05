@@ -499,6 +499,11 @@ public class 日本語 {
                 (半角片仮名と全角片仮名.get(一文字)) : 一文字;
     }
 
+    /**
+     * 濁点ですか（だくてんですか）
+     * @param 一文字 一文字を提供します
+     * @return 濁点の一文字
+     */
     public static char 濁点ですか(char 一文字) {
         return 濁点平仮名と片仮名.containsKey(一文字) ?
                 濁点平仮名と片仮名.get(一文字) :
