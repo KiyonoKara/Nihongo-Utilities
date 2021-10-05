@@ -38,5 +38,11 @@ public class Test {
 
         // を半角片仮名に変換
         System.out.println(日本語.を半角片仮名に変換("何でもありません"));
+
+        // 濁点ですか
+        System.out.println(日本語.濁点ですか('で'));
+        System.out.println(日本語.濁点ですか('デ'));
+
+
     }
 }
