@@ -270,6 +270,48 @@ public class 日本語 {
     private static final HashMap<Character, Character> 全角片仮名と半角平仮名 = new HashMap<>() {{
         for (Map.Entry<Character, Character> entry : 半角片仮名と全角片仮名.entrySet())
             put(entry.getValue(), entry.getKey());
+
+    }};
+
+    // HashMap of Dakuten kana
+    private static final HashMap<Character, Character> 濁点平仮名と片仮名 = new HashMap<>() {{
+        // Dakuten G
+        put('が', 'ガ');
+        put('ぎ', 'ギ');
+        put('ぐ', 'グ');
+        put('げ', 'ゲ');
+        put('ご', 'ゴ');
+
+        // Dakuten Z
+        put('ざ', 'ザ');
+        put('じ', 'ジ');
+        put('ず', 'ズ');
+        put('ぜ', 'ゼ');
+        put('ぞ', 'ゾ');
+
+        // Dakuten D
+        put('だ', 'ダ');
+        put('ぢ', 'ヂ');
+        put('づ', 'ヅ');
+        put('で', 'デ');
+        put('ど', 'ド');
+
+        // Dakuten B
+        put('ば', 'バ');
+        put('び', 'ビ');
+        put('ぶ', 'ブ');
+        put('べ', 'ベ');
+        put('ぼ', 'ボ');
+    }};
+
+    // HashMap of Handakuten kana
+    private static final HashMap<Character, Character> 半濁点平仮名と片仮名 = new HashMap<>() {{
+        // Handakuten P
+        put('ぱ', 'パ');
+        put('ぴ', 'ピ');
+        put('ぷ', 'プ');
+        put('ぺ', 'ペ');
+        put('ぽ', 'ポ');
     }};
 
     /**
@@ -456,4 +498,8 @@ public class 日本語 {
                 (char) (一文字 - 0x60) : 半角片仮名ですか(一文字) ?
                 (半角片仮名と全角片仮名.get(一文字)) : 一文字;
     }
+
+//    public static char 濁点ですか(char 一文字) {
+//
+//    }
 }
