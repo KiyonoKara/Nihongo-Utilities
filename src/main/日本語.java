@@ -510,6 +510,11 @@ public class 日本語 {
                 濁点平仮名と片仮名.getOrDefault(片仮名を平仮名に変換(一文字), 一文字);
     }
 
+    /**
+     * 半濁点ですか（はんだくてんですか）
+     * @param 一文字 一文字を提供します
+     * @return 半濁点の一文字
+     */
     public static char 半濁点ですか(char 一文字) {
         return 半濁点平仮名と片仮名.containsKey(一文字) ?
                 半濁点平仮名と片仮名.get(一文字) :
