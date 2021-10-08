@@ -2,6 +2,8 @@ package main;
 
 /*
  * 作成日：２０２１年９月３日
+ * 名前：Nihongo Utilities
+ * 氏名：Nihongo Utilities
  */
 
 // 正規表現
