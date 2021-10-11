@@ -18,7 +18,7 @@ import java.util.HashMap;
 import java.text.Normalizer;
 
 /**
- * main.日本語（にほんご）
+ * 日本語（にほんご）
  */
 @SuppressWarnings("NonAsciiCharacters")
 public class 日本語 {
