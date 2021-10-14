@@ -36,8 +36,8 @@ public class 日本語 {
     // 最初の全角平仮名の文字
     private static final char firstZenkakuHiragana = 'ぁ';
 
-    // Last Hiragana character,
-    // 最後の全角平仮名の文字, U+3096
+    // Last Hiragana character, U+3096
+    // 最後の全角平仮名の文字
     private static final char lastZenkakuHiragana = 'ゖ';
 
     // Zenkaku Katakana Bounds
