@@ -47,4 +47,10 @@ public class Nihongo {
 
     // Last Half-Width Katakana character, U+FF9D
     private static final char lastHankakuKatakana = 'ﾝ';
+
+    // HashMap of Hiragana to Katakana
+    protected static final HashMap<Character, Character> hiraganaToKatakana = 日本語.平仮名と片仮名;
+
+    // HashMap of Katakana to Hiragana
+    protected static final HashMap<Character, Character> katakanaToHiragana = 日本語.片仮名と平仮名;
 }
