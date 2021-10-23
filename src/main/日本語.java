@@ -59,7 +59,7 @@ public class 日本語 {
     private static final char lastHankakuKatakana = 'ﾝ';
 
     // HashMap of Hiragana to Katakana
-    private static final HashMap<Character, Character> 平仮名と片仮名 = new HashMap<>() {{
+    protected static final HashMap<Character, Character> 平仮名と片仮名 = new HashMap<>() {{
         // Vowels
         put('あ', 'ア');
         put('い', 'イ');
@@ -167,12 +167,12 @@ public class 日本語 {
     }};
 
     // HashMap of Katakana to Hiragana
-    private static final HashMap<Character, Character> 片仮名と平仮名 = new HashMap<>() {{
+    protected static final HashMap<Character, Character> 片仮名と平仮名 = new HashMap<>() {{
         for (Map.Entry<Character, Character> entry : 平仮名と片仮名.entrySet())
             put(entry.getValue(), entry.getKey());
     }};
 
-    private static final HashMap<Character, Character> 半角片仮名と全角片仮名 = new HashMap<>() {{
+    protected static final HashMap<Character, Character> 半角片仮名と全角片仮名 = new HashMap<>() {{
         // Punctuation
         put('｡', '。');
         put('｢', '「');
@@ -272,14 +272,14 @@ public class 日本語 {
     }};
 
     // HashMap of Zenkaku Katakana to Hankaku Katakana
-    private static final HashMap<Character, Character> 全角片仮名と半角平仮名 = new HashMap<>() {{
+    protected static final HashMap<Character, Character> 全角片仮名と半角平仮名 = new HashMap<>() {{
         for (Map.Entry<Character, Character> entry : 半角片仮名と全角片仮名.entrySet())
             put(entry.getValue(), entry.getKey());
 
     }};
 
     // HashMap of Dakuten kana
-    private static final HashMap<Character, Character> 濁点平仮名と片仮名 = new HashMap<>() {{
+    protected static final HashMap<Character, Character> 濁点平仮名と片仮名 = new HashMap<>() {{
         // Dakuten G
         put('が', 'ガ');
         put('ぎ', 'ギ');
@@ -310,7 +310,7 @@ public class 日本語 {
     }};
 
     // HashMap of Handakuten kana
-    private static final HashMap<Character, Character> 半濁点平仮名と片仮名 = new HashMap<>() {{
+    protected static final HashMap<Character, Character> 半濁点平仮名と片仮名 = new HashMap<>() {{
         // Handakuten P
         put('ぱ', 'パ');
         put('ぴ', 'ピ');
