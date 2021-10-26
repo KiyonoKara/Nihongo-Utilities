@@ -53,4 +53,9 @@ public class Nihongo {
 
     // HashMap of Katakana to Hiragana
     protected static final HashMap<Character, Character> katakanaToHiragana = 日本語.片仮名と平仮名;
+
+    public static String beautify(String str) {
+        return 日本語.盛れる(str);
+    }
+
 }
