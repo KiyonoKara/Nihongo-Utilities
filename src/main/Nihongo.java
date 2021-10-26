@@ -58,4 +58,17 @@ public class Nihongo {
         return 日本語.盛れる(str);
     }
 
+    public static String extractJapanese(String str, String type) {
+        return switch (type.toUpperCase()) {
+            case "punctuation" -> 日本語.正規表現マッチャー(str, regexPunctuation);
+            case "hiragana" -> 日本語.正規表現マッチャー(str, regexHiragana);
+            case "katakana" -> 日本語.正規表現マッチャー(str, regexKatakana);
+            case "romaji" -> 日本語.正規表現マッチャー(str, regexRomaji);
+            case "cjk" -> 日本語.正規表現マッチャー(str, regexCJK);
+            case "extended_cjk" -> 日本語.正規表現マッチャー(str, regexExtendedCJK);
+            case "all" -> 日本語.正規表現マッチャー(str, regexAll);
+            default -> str;
+        };
+    }
+
 }
