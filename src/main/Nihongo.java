@@ -70,4 +70,15 @@ public class Nihongo {
             default -> str;
         };
     }
+
+
+    /**
+     * Regex matching.
+     * @param str Provide a string.
+     * @param regex Provide valid regex.
+     * @return Output with the regex search.
+     */
+    public static String regexMatcher(String str, String regex) {
+        return 日本語.正規表現マッチャー(str, regex);
+    }
 }
