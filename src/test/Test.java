@@ -5,7 +5,7 @@ import main.日本語;
 public class Test {
     public static void main(String[] args) {
         // 盛れる
-        System.out.println(日本語.盛れる("おいしい.本当に!!!"));
+        System.out.println(日本語.盛れます("おいしい.本当に!!!"));
 
         // 日本語を抜き出す
         System.out.println(日本語.日本語を抜き出す("おいしい.本当に!!!", "平仮名"));
