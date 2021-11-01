@@ -321,7 +321,7 @@ public class 日本語 {
 
     /**
      * 盛れる（もれる）
-     * @param str ストリングを提供する
+     * @param str ストリングを提供します
      * @return 綺麗文字列
      */
     public static String 盛れる(String str) {
