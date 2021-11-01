@@ -81,4 +81,17 @@ public class Nihongo {
     public static String regexMatcher(String str, String regex) {
         return 日本語.正規表現マッチャー(str, regex);
     }
+
+
+    /**
+     * Gets the character count for all the general types of Japanese characters.
+     * @param str Provide a string.
+     * @param type Type.
+     * @return Japanese character statistics as a HashMap.
+     */
+    public static HashMap<String, Integer> getJPCharCount(String str, String type) {
+        return new HashMap<>() {{
+            put(type, extractJapanese(str, type).length());
+        }};
+    }
 }
