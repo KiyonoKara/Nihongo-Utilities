@@ -82,7 +82,6 @@ public class Nihongo {
         return 日本語.正規表現マッチャー(str, regex);
     }
 
-
     /**
      * Gets the character count for all the general types of Japanese characters.
      * @param str Provide a string.
