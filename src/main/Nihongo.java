@@ -93,4 +93,18 @@ public class Nihongo {
             put(type, extractJapanese(str, type).length());
         }};
     }
+
+    /**
+     * Gets the character count for all the general types of Japanese characters, multiple types allowed.
+     * @param str Provide a string.
+     * @param types Provide at least one type in an array.
+     * @return Japanese character statistics as a HashMap.
+     */
+    public static HashMap<String, Integer> getJPCharCount(String str, String[] types) {
+        return new HashMap<>() {{
+            for (String type : types) {
+                put(type, extractJapanese(str, type).length());
+            }
+        }};
+    }
 }
