@@ -324,7 +324,7 @@ public class 日本語 {
      * @param str ストリングを提供します
      * @return 綺麗文字列
      */
-    public static String 盛れる(String str) {
+    public static String 盛れます(String str) {
         return str
                 .replace("\\s", "　")
                 .replace(",", "、")
