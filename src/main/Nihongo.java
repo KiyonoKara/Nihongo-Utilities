@@ -54,8 +54,13 @@ public class Nihongo {
     // HashMap of Katakana to Hiragana
     protected static final HashMap<Character, Character> katakanaToHiragana = 日本語.片仮名と平仮名;
 
-    // HashMap of Half-Width Katakana to Katakana
+    // HashMap of Half-Width Katakana to Full-Width Katakana
     protected static final HashMap<Character, Character> hankakuToZenkakuKatakana = 日本語.半角片仮名と全角片仮名;
+
+    // HashMap of Full-Width Katakana to Half-Width Katakana
+    protected static final HashMap<Character, Character> zenkakuToHankakuKatakana = 日本語.全角片仮名と半角平仮名;
+
+
 
     public static String beautify(String str) {
         return 日本語.盛れます(str);
