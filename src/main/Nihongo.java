@@ -139,4 +139,13 @@ public class Nihongo {
     public static String toHankakuKatakana(String str) {
         return 日本語.を半角片仮名に変換(str);
     }
+
+    /**
+     * Checks if a character is Hiragana.
+     * @param ch Provide a character.
+     * @return Boolean.
+     */
+    public static boolean isHiragana(char ch) {
+        return ch >= firstZenkakuHiragana && lastZenkakuHiragana >= ch;
+    }
 }
