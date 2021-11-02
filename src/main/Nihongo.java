@@ -148,4 +148,13 @@ public class Nihongo {
     public static boolean isHiragana(char ch) {
         return ch >= firstZenkakuHiragana && lastZenkakuHiragana >= ch;
     }
+
+    /**
+     * Checks if a character is zenkaku Katakana.
+     * @param ch Provide a character.
+     * @return Boolean.
+     */
+    public static boolean isZenkakuKatakana(char ch) {
+        return ch >= firstZenkakuKatakana && lastZenkakuKatakana >= ch;
+    }
 }
