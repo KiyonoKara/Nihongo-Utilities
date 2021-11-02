@@ -121,4 +121,13 @@ public class Nihongo {
     public static String toHiragana(String str) {
         return 日本語.を平仮名に変換(str);
     }
+
+    /**
+     * Converts string with Hiragana or Hankaku Katakana to Zenkaku Katakana.
+     * @param str Provide a string.
+     * @return Converted string.
+     */
+    public static String toKatakana(String str) {
+        return 日本語.を片仮名に変換(str);
+    }
 }
