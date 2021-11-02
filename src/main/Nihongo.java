@@ -60,8 +60,6 @@ public class Nihongo {
     // HashMap of Full-Width Katakana to Half-Width Katakana
     protected static final HashMap<Character, Character> zenkakuToHankakuKatakana = 日本語.全角片仮名と半角平仮名;
 
-
-
     public static String beautify(String str) {
         return 日本語.盛れます(str);
     }
@@ -78,7 +76,6 @@ public class Nihongo {
             default -> str;
         };
     }
-
 
     /**
      * Regex matching.
@@ -116,5 +113,12 @@ public class Nihongo {
         }};
     }
 
-
+    /**
+     * Converts string with Hankaku / Zenkaku Katakana to Hiragana.
+     * @param str Provide a string.
+     * @return Converted string.
+     */
+    public static String toHiragana(String str) {
+        return 日本語.を平仮名に変換(str);
+    }
 }
