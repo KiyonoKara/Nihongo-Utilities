@@ -166,7 +166,9 @@ public class Nihongo {
         return isHiragana(ch) ? (char) (ch + 0x60) : ch;
     }
 
-//    public static char katakanaToHiragana(char ch) {
-//        return isZenkakuKatakana(ch) ? (char) (ch - 0x60) ?
-//    }
+    public static char katakanaToHiragana(char ch) {
+        return isZenkakuKatakana(ch) ? (char) (ch - 0x60) :
+                isHankakuKatakana(ch) ? (char) (hankakuToZenkakuKatakana.get(ch) - 0x60) :
+                 ch;
+    }
 }
