@@ -157,4 +157,8 @@ public class Nihongo {
     public static boolean isZenkakuKatakana(char ch) {
         return ch >= firstZenkakuKatakana && lastZenkakuKatakana >= ch;
     }
+
+    public static char hiraganaToKatakana(char ch) {
+        return isHiragana(ch) ? (char) (ch + 0x60) : ch;
+    }
 }
