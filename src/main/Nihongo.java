@@ -167,6 +167,11 @@ public class Nihongo {
         return ch >= firstHankakuKatakana && lastHankakuKatakana >= ch;
     }
 
+    /**
+     * Converts Hiragana to Katakana, full-width only.
+     * @param ch Provide a character.
+     * @return Converted character.
+     */
     public static char hiraganaToKatakana(char ch) {
         return isHiragana(ch) ? (char) (ch + 0x60) : ch;
     }
