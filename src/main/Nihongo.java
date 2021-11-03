@@ -176,6 +176,11 @@ public class Nihongo {
         return isHiragana(ch) ? (char) (ch + 0x60) : ch;
     }
 
+    /**
+     * Converts Katakana to Hiragana, both zenkaku and hankaku are supported.
+     * @param ch Provide a character.
+     * @return Converted character.
+     */
     public static char katakanaToHiragana(char ch) {
         return isZenkakuKatakana(ch) ? (char) (ch - 0x60) :
                 isHankakuKatakana(ch) ? (char) (hankakuToZenkakuKatakana.get(ch) - 0x60) :
