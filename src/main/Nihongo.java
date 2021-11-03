@@ -158,7 +158,15 @@ public class Nihongo {
         return ch >= firstZenkakuKatakana && lastZenkakuKatakana >= ch;
     }
 
+    public static boolean isHankakuKatakana(char ch) {
+        return ch >= firstHankakuKatakana && lastHankakuKatakana >= ch;
+    }
+
     public static char hiraganaToKatakana(char ch) {
         return isHiragana(ch) ? (char) (ch + 0x60) : ch;
     }
+
+//    public static char katakanaToHiragana(char ch) {
+//        return isZenkakuKatakana(ch) ? (char) (ch - 0x60) ?
+//    }
 }
