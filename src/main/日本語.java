@@ -47,10 +47,10 @@ public class 日本語 {
 
     // 半角片仮名の限度
     // 最初の半角片仮名の文字、U+FF66　
-    private static final char firstHankakuKatakana = 'ｦ';
+    private static final char 最初の半角片仮名 = 'ｦ';
 
     // 最後の半角片仮名の文字、U+FF9D　
-    private static final char lastHankakuKatakana = 'ﾝ';
+    private static final char 最後の半角片仮名 = 'ﾝ';
 
     // HashMap of Hiragana to Katakana
     protected static final HashMap<Character, Character> 平仮名と片仮名 = new HashMap<>() {{
@@ -471,7 +471,7 @@ public class 日本語 {
      * @return 真否
      */
     public static boolean 半角片仮名ですか(char 一文字) {
-        return 一文字 >= firstHankakuKatakana && lastHankakuKatakana >= 一文字;
+        return 一文字 >= 最初の半角片仮名 && 最後の半角片仮名 >= 一文字;
     }
 
     /**
