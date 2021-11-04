@@ -51,11 +51,11 @@ public class 日本語 {
 
     // Hankaku Katakana Bounds
     // First Half-Width Katakana character, U+FF66
-    // 最初の半角片仮名のー文字　
+    // 最初の半角片仮名の一文字　
     private static final char firstHankakuKatakana = 'ｦ';
 
     // Last Half-Width Katakana character, U+FF9D
-    // 最後の半角片仮名のー文字　
+    // 最後の半角片仮名の一文字　
     private static final char lastHankakuKatakana = 'ﾝ';
 
     // HashMap of Hiragana to Katakana
