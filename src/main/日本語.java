@@ -36,7 +36,7 @@ public class 日本語 {
     private static final char 最初の全角平仮名 = 'ぁ';
 
     // 最後の全角平仮名の文字、U+3096
-    private static final char lastZenkakuHiragana = 'ゖ';
+    private static final char 最後の全角平仮名 = 'ゖ';
 
     // 全角片仮名の限度
     // 最初の全角片仮名の文字、U+30A1
@@ -453,7 +453,7 @@ public class 日本語 {
      * @return 真否
      */
     public static boolean 平仮名ですか(char 一文字) {
-        return 一文字 >= 最初の全角平仮名 && lastZenkakuHiragana >= 一文字;
+        return 一文字 >= 最初の全角平仮名 && 最後の全角平仮名 >= 一文字;
     }
 
     /**
