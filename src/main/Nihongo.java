@@ -187,10 +187,20 @@ public class Nihongo {
                  ch;
     }
 
+    /**
+     * Checks if a kana character is dakuten.
+     * @param ch Provide a character.
+     * @return Boolean.
+     */
     public static boolean isDakuten(char ch) {
         return 日本語.濁点ですか(ch);
     }
 
+    /**
+     * Checks if a kana character is handakuten.
+     * @param ch Provide a character.
+     * @return Boolean.
+     */
     public static boolean isHandakuten(char ch) {
         return 日本語.半濁点ですか(ch);
     }
