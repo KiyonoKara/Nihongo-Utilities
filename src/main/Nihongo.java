@@ -186,4 +186,8 @@ public class Nihongo {
                 isHankakuKatakana(ch) ? (char) (hankakuToZenkakuKatakana.get(ch) - 0x60) :
                  ch;
     }
+
+    public static boolean isDakuten(char ch) {
+        return 日本語.濁点ですか(ch);
+    }
 }
