@@ -190,4 +190,8 @@ public class Nihongo {
     public static boolean isDakuten(char ch) {
         return 日本語.濁点ですか(ch);
     }
+
+    public static boolean isHandakuten(char ch) {
+        return 日本語.半濁点ですか(ch);
+    }
 }
