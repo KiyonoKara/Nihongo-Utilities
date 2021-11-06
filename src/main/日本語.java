@@ -424,7 +424,7 @@ public class 日本語 {
 
     /**
      * を半角片仮名に変換（をはんかくかたかなにへんかん）
-     * @param str - ストリングを提供する
+     * @param str ストリングを提供します
      * @return 半角片仮名の文字列
      */
     public static String を半角片仮名に変換(String str) {
