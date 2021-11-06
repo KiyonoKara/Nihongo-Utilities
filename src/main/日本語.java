@@ -409,7 +409,7 @@ public class 日本語 {
 
     /**
      * を片仮名に変換（を片仮名にへんかん）
-     * @param str ストリングを提供する
+     * @param str ストリングを提供します
      * @return 片仮名の文字列
      */
     public static String を片仮名に変換(String str) {
