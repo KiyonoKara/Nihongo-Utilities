@@ -332,7 +332,7 @@ public class 日本語 {
 
     /**
      * 日本語を抜き出す（にほんごをぬきだす）
-     * @param str ストリングを提供する
+     * @param str ストリングを提供します
      * @param type タイプ
      * @return 日本語のみの文字列
      */
@@ -351,8 +351,8 @@ public class 日本語 {
 
     /**
      * 正規表現マッチャー（せいきひょうげんマッチャー）
-     * @param str ストリングを提供する
-     * @param regex 正規表現を提供する
+     * @param str ストリングを提供します
+     * @param regex 正規表現を提供します
      * @return 正規表現の実績データ
      */
     public static String 正規表現マッチャー(String str, String regex) {
@@ -367,7 +367,7 @@ public class 日本語 {
 
     /**
      * 文字の回数を受けます（もじのかいすうをうけます）
-     * @param str ストリングを提供する
+     * @param str ストリングを提供します
      * @param type タイプ
      * @return 日本語の統計のHashMapです
      */
@@ -380,7 +380,7 @@ public class 日本語 {
 
     /**
      * 文字の回数を受けます（もじのかいすうをうけます）
-     * @param str ストリングを提供する
+     * @param str ストリングを提供します
      * @param types アレイタイプ
      * @return 日本語の統計のHashMapです
      */
@@ -394,7 +394,7 @@ public class 日本語 {
 
     /**
      * を平仮名に変換（をひらがなにへんかん）
-     * @param str ストリングを提供する
+     * @param str ストリングを提供します
      * @return 平仮名の文字列
      */
     public static String を平仮名に変換(String str) {
