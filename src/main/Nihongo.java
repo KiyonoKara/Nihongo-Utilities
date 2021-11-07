@@ -197,7 +197,7 @@ public class Nihongo {
         return 日本語.半濁点ですか(ch);
     }
 
-    public static final HashMap<String, String> katakanaToRomaji = new HashMap<>() {{
+    static final HashMap<String, String> katakanaToRomaji = new HashMap<>() {{
         put("ア", "a");
         put("イ", "i");
         put("ウ", "u");
