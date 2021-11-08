@@ -317,4 +317,27 @@ public class Nihongo {
         put("」", "\"");
         put("。", ".");
     }};
+
+    public static String convertKatakanaToRomaji(String str) {
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < str.length(); i++) {
+            if (i <= str.length() - 2) {
+                if (katakanaToRomaji.containsKey(str.substring(i, i + 2))) {
+                    stringBuilder.append(katakanaToRomaji.get(str.substring(i, i + 2)));
+                    i++;
+                } else if (katakanaToRomaji.containsKey(str.substring(i, i + 1)))
+                    stringBuilder.append(katakanaToRomaji.get(str.substring(i, i + 1)));
+                else if (str.charAt(i) == 'ッ')
+                    stringBuilder.append(katakanaToRomaji.get(str.substring(i + 1, i + 2)).charAt(0));
+                else
+                    stringBuilder.append(str.charAt(i));
+            } else {
+                if (katakanaToRomaji.containsKey(str.substring(i, i + 1)))
+                    stringBuilder.append(katakanaToRomaji.get(str.substring(i, i + 1)));
+                 else
+                    stringBuilder.append(str.charAt(i));
+            }
+        }
+        return stringBuilder.toString();
+    }
 }
