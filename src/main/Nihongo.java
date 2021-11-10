@@ -356,6 +356,8 @@ public class Nihongo {
         for (int i = 0; i < str.length(); i++) {
             if (isKatakana(str.charAt(i)))
                 katakanaString.append(str.charAt(i));
+            else if (isHiragana(str.charAt(i)))
+                katakanaString.append(hiraganaToKatakana(str.charAt(i)));
         }
 
         return convertKatakanaToRomaji(katakanaString.toString());
