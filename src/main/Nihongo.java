@@ -341,4 +341,12 @@ public class Nihongo {
         }
         return stringBuilder.toString();
     }
+
+//    public static String convertHiraganaToRomaji(String str) {
+//        StringBuilder stringBuilder = new StringBuilder();
+//        String katakanaString;
+//        for (int i = 0; i < str.length(); i++) {
+//
+//        }
+//    }
 }
