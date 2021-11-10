@@ -141,6 +141,11 @@ public class Nihongo {
         return ch >= firstZenkakuHiragana && lastZenkakuHiragana >= ch;
     }
 
+    /**
+     * Checks if a character is Katakana.
+     * @param ch Provide a character.
+     * @return Boolean.
+     */
     public static boolean isKatakana(char ch) {
         return 日本語.片仮名ですか(ch);
     }
