@@ -351,11 +351,13 @@ public class Nihongo {
         return stringBuilder.toString();
     }
 
-//    public static String convertHiraganaToRomaji(String str) {
-//        StringBuilder stringBuilder = new StringBuilder();
-//        String katakanaString;
-//        for (int i = 0; i < str.length(); i++) {
-//
-//        }
-//    }
+    public static String convertHiraganaToRomaji(String str) {
+        StringBuilder stringBuilder = new StringBuilder(), katakanaString = new StringBuilder();
+        for (int i = 0; i < str.length(); i++) {
+            if (isKatakana(str.charAt(i)))
+                katakanaString.append(str.charAt(i));
+        }
+
+        return convertKatakanaToRomaji(katakanaString.toString());
+    }
 }
