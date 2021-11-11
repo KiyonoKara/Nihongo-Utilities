@@ -352,7 +352,7 @@ public class Nihongo {
     }
 
     public static String convertHiraganaToRomaji(String str) {
-        StringBuilder stringBuilder = new StringBuilder(), katakanaString = new StringBuilder();
+        StringBuilder katakanaString = new StringBuilder();
         for (int i = 0; i < str.length(); i++) {
             if (isKatakana(str.charAt(i)))
                 katakanaString.append(str.charAt(i));
