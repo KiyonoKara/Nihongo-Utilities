@@ -6,10 +6,6 @@ package main;
  * File Name: Nihongo.java
  */
 
-// Collections
-
-import test.refuse.日本語;
-
 import java.text.Normalizer;
 import java.util.HashMap;
 import java.util.Map;
@@ -386,7 +382,13 @@ public class Nihongo {
    * @return Converted string.
    */
   public static String toHiragana(String str) {
-    return 日本語.を平仮名に変換(str);
+    StringBuilder stringBuilder = new StringBuilder();
+    for (int i = 0; i < str.length(); i++) {
+      if (isZenkakuKatakana(str.charAt(i)) || isHankakuKatakana(str.charAt(i))) {
+        stringBuilder.append(katakanaToHiragana(str.charAt(i)));
+      } else stringBuilder.append(str.charAt(i));
+    }
+    return stringBuilder.toString();
   }
 
   /**
@@ -396,7 +398,13 @@ public class Nihongo {
    * @return Converted string.
    */
   public static String toKatakana(String str) {
-    return 日本語.を片仮名に変換(str);
+    StringBuilder stringBuilder = new StringBuilder();
+    for (int i = 0; i < str.length(); i++) {
+      if (isHiragana(str.charAt(i))) stringBuilder.append(hiraganaToKatakana(str.charAt(i)));
+      else stringBuilder.append(str.charAt(i));
+    }
+
+    return stringBuilder.toString();
   }
 
   /**
