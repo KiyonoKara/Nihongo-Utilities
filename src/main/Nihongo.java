@@ -13,6 +13,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Nihongo {
+  @SuppressWarnings("all")
   static String
   regexPunctuation = "[\u3000-\u303F]",
   regexHiragana = "[\u3040-\u309f]",
