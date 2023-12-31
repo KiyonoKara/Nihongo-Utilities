@@ -333,7 +333,6 @@ public class Nihongo {
 
   /**
    * Regex matching.
-   *
    * @param str   Provide a string.
    * @param regex Provide valid regex.
    * @return Output with the regex search.
@@ -350,7 +349,6 @@ public class Nihongo {
 
   /**
    * Gets the character count for all the general types of Japanese characters.
-   *
    * @param str  Provide a string.
    * @param type Type of character(s).
    * @return Japanese character statistics as a HashMap.
@@ -363,7 +361,6 @@ public class Nihongo {
 
   /**
    * Gets the character count for all the general types of Japanese characters, multiple types allowed.
-   *
    * @param str   Provide a string.
    * @param types Provide at least one type in an array.
    * @return Japanese character statistics as a HashMap.
@@ -378,7 +375,6 @@ public class Nihongo {
 
   /**
    * Converts string with Hankaku / Zenkaku Katakana to Hiragana.
-   *
    * @param str Provide a string.
    * @return Converted string.
    */
@@ -394,7 +390,6 @@ public class Nihongo {
 
   /**
    * Converts string with Hiragana or Hankaku Katakana to Zenkaku Katakana.
-   *
    * @param str Provide a string.
    * @return Converted string.
    */
@@ -410,7 +405,6 @@ public class Nihongo {
 
   /**
    * Converts Hiragana and Katakana to Hankaku Katakana.
-   *
    * @param str Provide a string.
    * @return Converted string.
    */
@@ -435,7 +429,6 @@ public class Nihongo {
 
   /**
    * Checks if a character is Hiragana.
-   *
    * @param ch Provide a character.
    * @return Boolean.
    */
@@ -445,7 +438,6 @@ public class Nihongo {
 
   /**
    * Checks if a character is Katakana.
-   *
    * @param ch Provide a character.
    * @return Boolean.
    */
@@ -455,7 +447,6 @@ public class Nihongo {
 
   /**
    * Checks if a character is zenkaku Katakana.
-   *
    * @param ch Provide a character.
    * @return Boolean.
    */
@@ -465,7 +456,6 @@ public class Nihongo {
 
   /**
    * Checks if a character is hankaku Katakana.
-   *
    * @param ch Provide a character.
    * @return Boolean.
    */
@@ -475,7 +465,6 @@ public class Nihongo {
 
   /**
    * Converts Hiragana to Katakana, full-width only.
-   *
    * @param ch Provide a character.
    * @return Converted character.
    */
@@ -485,7 +474,6 @@ public class Nihongo {
 
   /**
    * Converts Katakana to Hiragana, both zenkaku and hankaku are supported.
-   *
    * @param ch Provide a character.
    * @return Converted character.
    */
@@ -497,7 +485,6 @@ public class Nihongo {
 
   /**
    * Checks if a kana character is dakuten.
-   *
    * @param ch Provide a character.
    * @return Boolean.
    */
@@ -508,7 +495,6 @@ public class Nihongo {
 
   /**
    * Checks if a kana character is handakuten.
-   *
    * @param ch Provide a character.
    * @return Boolean.
    */
