@@ -647,6 +647,11 @@ public class Nihongo {
     return stringBuilder.toString();
   }
 
+  /**
+   * Converts all Hiragana present in a provided string to Romaji
+   * @param str The string with Hiragana text
+   * @return Romaji text
+   */
   public static String convertHiraganaToRomaji(String str) {
     StringBuilder katakanaString = new StringBuilder();
     for (int i = 0; i < str.length(); i++) {
