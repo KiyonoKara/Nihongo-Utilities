@@ -7,5 +7,6 @@ public class TestEN {
         System.out.println(Nihongo.convertKatakanaToRomaji("カタカナ・ローマジ"));
         System.out.println(Nihongo.toHiragana("てすと、テスト"));
         System.out.println(Nihongo.toKatakana("カタカナ、ひらがな"));
+        System.out.println(Nihongo.convertHiraganaToRomaji("ひらがな"));
     }
 }
